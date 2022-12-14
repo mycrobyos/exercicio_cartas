@@ -4,40 +4,51 @@ import java.util.List;
 
 public class Jogador {
 
-  private List<Carta> deck;
-  
-  private Integer vidas;
+    private List<Carta> deck;
 
-  private Integer pontos;
+    private Integer vidas;
 
-  public Jogador(List<Carta> deck, Integer vidas, Integer pontos) {
-    this.deck = deck;
-    this.vidas = vidas;
-    this.pontos = pontos;
-  }
+    private Integer pontos;
 
-  public List<Carta> getDeck() {
-    return deck;
-  }
+    private String nome;
 
-  public void setDeck(List<Carta> deck) {
-    this.deck = deck;
-  }
+    public Jogador(List<Carta> deck, Integer vidas, Integer pontos, String nome) {
+        this.deck = deck;
+        this.vidas = vidas;
+        this.pontos = pontos;
+        this.nome = nome;
+    }
 
-  public Integer getVidas() {
-    return vidas;
-  }
+    public String getNome() {
+        return nome;
+    }
 
-  public void setVidas(Integer vidas) {
-    this.vidas = vidas;
-  }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-  public Integer getPontos() {
-    return pontos;
-  }
+    public List<Carta> getDeck() {
+        return deck;
+    }
 
-  public void setPontos(Integer pontos) {
-    this.pontos = pontos;
-  }
-  
+    public void setDeck(List<Carta> deck) {
+        this.deck = deck;
+    }
+
+    public Integer getVidas() {
+        return vidas;
+    }
+
+    public void setVidas(Integer vidas) {
+        this.vidas = vidas;
+    }
+
+    public Integer getPontos() {
+        return pontos;
+    }
+
+    public void setPontos(Integer pontos) {
+        this.pontos = pontos;
+    }
+
 }
